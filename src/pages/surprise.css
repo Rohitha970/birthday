@@ -1,0 +1,146 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.surprise {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #fdecef, #ede9fe, #e0f2fe);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-title {
+  position: absolute;
+  top: 18px;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #610ce9;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  margin-top: 90px;
+  text-align: center;
+  color: #2b2eef;
+}
+
+.main-text {
+  max-width: 75%;
+  font-size: 1.55rem;
+  line-height: 1.95;
+  color: #c936f2;
+  text-align: center;
+  margin: 20px auto;
+  white-space: pre-line;
+}
+
+/* 🔒 FIXED BUTTON (NO MOVEMENT) */
+.center-btn {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  
+  width: 340px;              /* ✅ LOCK WIDTH */
+  height: 56px;              /* ✅ LOCK HEIGHT */
+  background: rgba(244, 207, 228, 0.85);
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* REMOVE ALL INTERACTION MOVEMENT */
+.voice-btn:active,
+.voice-btn:focus {
+  outline: none;
+}
+
+/* Bottom section */
+.bottom-section {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 24px;
+}
+
+.bottom-item {
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+  box-shadow: 0 8px 26px #4f9dda40;
+  background: #f3efda;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+
+}
+
+.bottom-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.qr-code-box {
+  width: 200px;
+  height: 200px;
+  background: #efefed;
+  border-radius: 16px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #edeee8; /* optional */
+  overflow: hidden;
+
+}
+.qr-code {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .bottom-item,
+  .bottom-item img,
+  .bottom-item .qr-code {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.qr-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f40a5c;
+}
+
+.heart {
+  position: absolute;
+  bottom: 80px;
+  font-size: 24px;
+  pointer-events: none;
+}

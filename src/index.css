@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(120deg, #e7b281, #d290bf);
+  color: rgba(64, 33, 237, 0.773);
+  overflow-x: hidden;
+}
+
+/* ---------- COMMON SCENE ---------- */
+.scene {
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 20px;
+  border-radius: 12px;
+  border: none;
+  background: rgb(152, 219, 229);
+  color: rgb(112, 26, 231);
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.handwritten {
+  font-size: 22px;
+}
+
+/* ---------- IMAGES ---------- */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  
+}
+
+.images img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ---------- LANDING ---------- */
+.landing-img {
+  width: 80%;
+  max-width: 600px;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: 24px;
+  margin-bottom: 20px;
+}
+
+/* ---------- MEMORIES ---------- */
+
+/* ---------- CELEBRATION ---------- */
+.celebration-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #ffd6e0, #ffb3c6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cake-image {
+  width: 260px;
+  animation: floatCake 3s ease-in-out infinite;
+}
+
+@keyframes floatCake {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
+}
