@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
    min-height: 100vh;
-  overflow: visible;
+  overflow: hidden;
   background: linear-gradient(to bottom, #fff0f6, #ffe3ec);
   border-radius: 24px;
   border: 6px solid #ff8fab;
@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   z-index: 5;
-  top: calc(0px - 120px); 
+  top:20px;
   object-fit: cover;
 }
 
@@ -55,8 +55,8 @@
 /* Center Text */
 .center-text {
   position: absolute;
-  top: 45%;
-  left: 42%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
   text-align: center;
@@ -134,7 +134,7 @@
 .center-message {
   position: absolute;
   top: 30%;
-  left: 40%;
+  left: 36%;
   transform: translate(-50%, -50%);
   text-align: center;
   max-width: 680px;
@@ -152,5 +152,22 @@
     0 0 20px rgba(228, 230, 116, 0.6),
     0 0 35px rgba(237, 45, 192, 0.4);
 }
+@media (max-width: 768px) {
+  .mem-img {
+    width: 180px;
+    height: 140px;
+  }
+
+  .center-text,
+  .center-message {
+    font-size: 1.6rem;
+    padding: 0 15px;
+  }
+
+  .birthday-msg {
+    font-size: 2.2rem;
+  }
+}
+
 
 
