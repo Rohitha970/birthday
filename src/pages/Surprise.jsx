@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Confetti from "../effects/Confetti";
 import QRCodeShare from "../components/QRCodeShare";
-import "./Surprise.css";
+import "./surprise.css";
 
 export default function Surprise() {
   const navigate = useNavigate();
