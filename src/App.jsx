@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Memories from "./pages/Memories";
 import Celebration from "./pages/Celebration";
@@ -20,7 +20,8 @@ class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return (
         <div style={{ color: "red", padding: "20px", textAlign: "center" }}>
-          ⚠ Something went wrong! <br />
+          ⚠ Something went wrong!
+          <br />
           {this.state.errorMessage}
         </div>
       );
@@ -32,15 +33,13 @@ class ErrorBoundary extends Component {
 export default function App() {
   return (
     <ErrorBoundary>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/memories" element={<Memories />} />
-          <Route path="/celebration" element={<Celebration />} />
-          <Route path="/surprise" element={<Surprise />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/memories" element={<Memories />} />
+        <Route path="/celebration" element={<Celebration />} />
+        <Route path="/surprise" element={<Surprise />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </ErrorBoundary>
   );
 }

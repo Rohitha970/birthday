@@ -9,8 +9,8 @@ import usePageAudio from "../hooks/usePageAudio";
 export default function Landing() {
   const nav = useNavigate();
 
-  // ▶ Auto-play landing song from public folder
-  usePageAudio("/assets/audio/birthday.mp3", true);
+  // ▶ Auto-play landing song from public fo
+usePageAudio(`${import.meta.env.BASE_URL}assets/audio/birthday.mp3`, true);
 
   return (
     <div className="scene landing">
@@ -28,7 +28,7 @@ export default function Landing() {
 
       {/* 🎂 FADE IN / OUT IMAGE from public folder */}
       <motion.img
-        src="/assets/images/birth.jpeg"  // ✅ reference directly from public
+         src={`${import.meta.env.BASE_URL}assets/images/birth.jpeg`} // ✅ reference directly from public
         className="landing-img"
         animate={{ opacity: [0, 1, 0.7, 1] }}
         transition={{ duration: 3, repeat: Infinity }}
