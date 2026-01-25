@@ -32,13 +32,13 @@ export default function Memories() {
   const leftImages = [
     { src: `${import.meta.env.BASE_URL}assets/images/mom1.jpeg`, text: "❤️Sweet smile ❤️" },
     { src: `${import.meta.env.BASE_URL}assets/images/mom2.jpeg`, text: "Warm hug 💖" },
-    { src: `${import.meta.env.BASE_URL}assets/images/mom3.jpeg`, text: "💕Lovely moments 🌸" },
+    
   ];
 
   const rightImages = [
     { src: `${import.meta.env.BASE_URL}assets/images/birth.jpeg`, text: "😍Cherished laugh 😍" },
     { src: `${import.meta.env.BASE_URL}assets/images/mom5.jpeg`, text: "💕Caring heart 💕" },
-    { src: `${import.meta.env.BASE_URL}assets/images/mom8.jpeg`, text: "💝Precious memories 💝" },
+    
   ];
 
   return (
